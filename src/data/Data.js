@@ -27,7 +27,7 @@ export const navContent = [
     {
         id: 1,
         name: 'Home',
-        icon: faHome,      
+        icon: faHome,       
         path: '/'
     },
     {

@@ -1,0 +1,42 @@
+.navlinks{
+    position: fixed;
+    inset: 0;
+    width:100%;
+    left: 0;
+    padding: 60px 30px;
+    background: var(--colorr-light);
+    transition: var(--transition);
+    z-index: 11;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid var(--colorr-lightEx);
+    padding-block:14px ;
+    color: var(--colorr-dark);
+}
+
+.nav-link span{
+    font-size: 1.1rem;
+}
+
+.nav-toggle{
+   position: fixed;
+   top: 2.5rem;
+   right: 5%;
+   width: 24px;
+   /* background:#000 ;  */
+   z-index: 12;
+}
+
+.nav-toggle span{
+    width: 100%;
+    display: block;
+    height: 2px;
+    background: var(--colorr-dark);
+    margin-bottom: 5px;
+    transition:  var(--transition);
+
+}

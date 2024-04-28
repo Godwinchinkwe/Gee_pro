@@ -4,7 +4,6 @@ import './Nav.css'
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-// import {faHome, faEnvelope, faUserGraduate, faFolder} from '@fortawesome/free-solid-svg-icons'
 
 
   export default function Nav() {
@@ -39,12 +38,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
   
   return (
     <nav>
-      <ul>
+      <ul className='navlinks'>
          {
           navContent.map(({id, name, path, icon})=> {
             return(
               <li className='nav-item' key={id}>
-                <NavLink to={path}>
+                <NavLink to={path} className={'nav-link'}>
                   <span><FontAwesomeIcon icon={icon}/> </span>
                   <h3>{name}</h3>
                 </NavLink>
@@ -53,7 +52,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
           })
         } 
       </ul>
+      <div className='nav-toggle'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      {/* <div className='btn'>hello world </div> */}
     </nav>
   )
 }
 
+ 
