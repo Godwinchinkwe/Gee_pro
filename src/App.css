@@ -36,6 +36,9 @@ h1,h2,h3,h4{
     color: var(--color-dark);
     font-weight: 600;
 }
+h1{
+    font-size:3rem ;
+}
 
 h1 span{
     color: var(--color-primary);

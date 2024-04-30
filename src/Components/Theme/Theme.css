@@ -1,0 +1,7 @@
+.Bg-toggler{
+    background: var(--color-light);
+    height: 2.8rem;
+    width: 2.8rem;
+    display:flex;
+    align-items: center;
+}

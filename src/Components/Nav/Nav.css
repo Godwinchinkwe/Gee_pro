@@ -87,6 +87,8 @@
         border: transparent;
         flex-direction: row-reverse;
         padding-block: 0;
+        gap: 0;
+        margin: 2rem 0;
     }
 
     .nav-link span {
