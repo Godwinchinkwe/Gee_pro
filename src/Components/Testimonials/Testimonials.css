@@ -1,0 +1,26 @@
+.testimonials-container{
+    width: 50%;
+}
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    text-align: center;
+}
+
+.testimonials img{
+    width: 4rem;
+    margin: 0 auto;
+}
+
+@media (max-width:1024px) {
+    .testimonials-container{
+        width: 60%;
+    }
+}
+
+@media (max-width:1024px) {
+    .testimonials-container{
+        width: 90%;
+    }
+}

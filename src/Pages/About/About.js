@@ -4,6 +4,10 @@ import HeadingText from "../../Components/HeadingText/HeadingText"
 import "./About.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
+import Cards from '../../UI/Cards'
+import { experience } from "../../data/Data"
+import Tools from '../../Components/Tools/Tools'
+import Services from '../../Components/Services/Services'
 
 const About = () => {
   return (
@@ -25,10 +29,21 @@ const About = () => {
           </a>
         </div>
         <div className='about-right'>
-          
+          {
+            experience.map(({id, no, title})=>{
+              return(
+                <Cards key={id} classname={'experience-card'}>
+                  <h1><span>{no}</span></h1>
+                  <p>{title}</p>
+                </Cards>
+              )
+            })
+          }
         </div>
       </div>
     </section>
+    <Tools />
+    <Services />
     </>
   )
 }
