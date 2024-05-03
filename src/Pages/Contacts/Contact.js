@@ -24,7 +24,7 @@ const Contact = () => {
       </div>
     </section>
     <footer>
-      copyright All Right Reserved || @candycode. Youtube
+      copyright All Right Reserved || Devodinakachi@gmail.com
     </footer>
     </>
   )

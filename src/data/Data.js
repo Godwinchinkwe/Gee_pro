@@ -48,6 +48,7 @@ export const navContent = [
         icon : faEnvelope,
         path: '/Contact'
     },
+ 
 ];
 
 
@@ -71,12 +72,6 @@ export const experience = [
 ];
 
 
-// import image1 from '../../src/assets/python.png'
-// import image2 from '../../src/assets/react.png'
-// import image3 from '../../src/assets/node.png'
-// import image4 from '../../src/assets/figma.png'
-// import image5 from '../../src/assets/ps.png'
-// import image6 from '../../src/assets/sketch.png'
 export const tools = [
     {
         id: 1,
@@ -105,7 +100,6 @@ export const tools = [
 ];
 
 
-// import {faCodeBranch, faCode,faCodeCompare,} from '@fortawesome/free-solid-svg-icons'
 export const services = [
     {
         id: 1,
@@ -130,9 +124,6 @@ export const services = [
 
 
 
-// import protfoliImg1 from '../../src/assets/p1.jpg'
-// import protfoliImg2 from '../../src/assets/p2.jpg'
-// import protfoliImg3 from '../../src/assets/p3.jpg'
 export const portfolio = [
     {
         id: 1,
@@ -159,10 +150,7 @@ export const portfolio = [
 
 
 
-// import avatar1 from '../../src/assets/avatar1.png'
-// import avatar2 from '../../src/assets/avatar2.png'
-// import avatar3 from '../../src/assets/avatar3.png'
-// import avatar4 from '../../src/assets/avatar4.png'
+
 export const testimonials = [
     {
         id: 1,

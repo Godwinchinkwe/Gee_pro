@@ -8,6 +8,7 @@ import Cards from '../../UI/Cards'
 import { experience } from "../../data/Data"
 import Tools from '../../Components/Tools/Tools'
 import Services from '../../Components/Services/Services'
+import Education from '../../Components/Education/Education'
 
 const About = () => {
   return (
@@ -44,6 +45,7 @@ const About = () => {
     </section>
     <Tools />
     <Services />
+    <Education />
     </>
   )
 }
