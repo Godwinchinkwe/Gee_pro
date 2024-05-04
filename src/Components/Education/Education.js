@@ -16,22 +16,22 @@ const Education = () => {
         <VerticalTimelineElement className='vertical-timeline-element--education' date="2010 -2014"
         iconStyle={{background: "#5a7bc8", color:"white"}}
         icon={<FontAwesomeIcon icon={faHome}/>}>
-          <h3> My school high school, Abia state</h3>
-          <p>High School Diploma </p>
+          <h3 className='degree'> My school high school, Abia state</h3>
+          <p className='degpee'>High School Diploma </p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement className='vertical-timeline-element--education' date="2010 -2014"
         iconStyle={{background: "#5a7bc8", color:"white"}}
         icon={<FontAwesomeIcon icon={faUserGraduate}/>}>
-          <h3> My school high school, Abia state</h3>
-          <p>High School Diploma </p>
+          <h3 className='degree'> My school high school, Abia state</h3>
+          <p className='degpee'>High School Diploma </p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement className='vertical-timeline-element--education' date="2010 -2014"
         iconStyle={{background: "#5a7bc8", color:"white"}}
         icon={<FontAwesomeIcon icon={faEnvelope}/>}>
-          <h3> My school high school, Abia state</h3>
-          <p>High School Diploma </p>
+          <h3 className='degree'> My school high school, Abia state</h3>
+          <p className='degpee'>High School Diploma </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>

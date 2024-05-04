@@ -1,21 +1,12 @@
-/* .educationside > :nth-child(4) {
+.degree{
+  color: var(--color-primary);
+}
+.degpee{
+  color:  hsl(0, 0%, 10%); ;
+}
+
+.edu{
+    color: var(--color-primary);
     font-size: 1.5rem;
     font-weight: bold;
-  } */
-
-
-  /* .educationside{
-    color: var(--gray);
-  } */
-
-
-/* .vertical-timeline-element--education{
-    color: var(--color-dark);
-} */
-
-
-/* .edu{
-    color: var(--black);
-    font-size: 1.5rem;
-    font-weight: bold;
-} */
+}

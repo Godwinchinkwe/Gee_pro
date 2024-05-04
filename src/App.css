@@ -21,7 +21,8 @@
 .dark-theme{
     --color-body: hsl(231, 39%, 10%);
     --color-dark: hsl(0, 0%, 100%); 
-    --color-light: hsl(0, 0%, 10%);   
+    --color-light: hsl(0, 0%, 10%); 
+    /* --color-primary:#5a7bc8;   */
 }
 
 body{
