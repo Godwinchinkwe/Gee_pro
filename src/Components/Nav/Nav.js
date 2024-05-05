@@ -1,4 +1,3 @@
-// import React from 'react'
 import { navContent } from '../../data/Data'
 import './Nav.css'
 import { NavLink } from 'react-router-dom'
@@ -10,19 +9,31 @@ import { useState } from 'react'
   export default function Nav() {
 
     const [ showmenu, setShowmenu] = useState(false);
+  const [toggle, setToggle] = useState(true);
+
+
     let MenuHandler=()=>{
-      setShowmenu(!showmenu)
+    setShowmenu(!showmenu )
     }
+     
+
+  const pathe = () => { 
+      setToggle(false) 
+      setShowmenu(!showmenu)
+      showmenu(true)
+  }
+
+  
 
   
   return (
     <nav>
-      <ul className={`${showmenu ? 'navlinks navlinks-show' : 'navlinks'}`}>
+     {toggle ? <ul className={`${showmenu ? 'navlinks navlinks-show' : 'navlinks'}`}>
          {
           navContent.map(({id, name, path, icon})=> {
             return(
-              <li className='nav-item' key={id}>
-                <NavLink to={path} className={({isActive})=> isActive ? 'nav-link navlinksActive' : 'nav-link'}>
+              <li className='nav-item' key={id} >
+                <NavLink to={path} onClick={()=>(pathe)} className={({isActive})=> isActive ? 'nav-link navlinksActive' : 'nav-link'}>
                   <span><FontAwesomeIcon icon={icon}/> </span>
                   <h3>{name}</h3>
                 </NavLink>
@@ -30,13 +41,14 @@ import { useState } from 'react'
             )
           })
         } 
-      </ul>
-      <div className={`${showmenu ? 'nav-toggle nav-close' : "nav-toggle" }`} onClick={MenuHandler}>
+      </ul> : "" }
+
+       <div className={`${showmenu ? 'nav-toggle nav-close' : "nav-toggle" }`} onClick={MenuHandler}>
         <span></span>
         <span></span>
         <span></span>
       </div>
-      {/* <div className='btn'>hello world </div> */}
+
     </nav>
   )
 }

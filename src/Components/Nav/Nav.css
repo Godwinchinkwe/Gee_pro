@@ -49,10 +49,11 @@
 
 .nav-close span:nth-child(2){
     display: none;
+
 }
 
 .nav-close span:nth-child(3){
-    transform: rotate(45deg) translate(-1px, -2px);
+    transform: rotate(-45deg) translate(-1px, -2px);
 }
 
 .navlinksActive span{

@@ -6,7 +6,8 @@ import { useEffect, useState } from 'react'
 
 
 const getLocalStorageTheme = () =>{
-  let theme = 'light-theme';
+  // let theme = 'light-theme';
+  let theme = 'dark-theme';
 
   if (localStorage.getItem('theme')){
     theme = localStorage.getItem("theme");
@@ -19,10 +20,13 @@ const Theme = () => {
   const [Theme, setTheme] = useState(getLocalStorageTheme());
 
   let toggleTheme=()=>{
-    if(Theme === 'light-theme'){
-      setTheme('dark-theme')
+    // if(Theme === 'light-theme'){
+      if(Theme === 'dark-theme'){
+      // setTheme('dark-theme')
+      setTheme('light-theme')
     }else{
       setTheme('light-theme')
+      setTheme('dark-theme')
     }
   }
 
