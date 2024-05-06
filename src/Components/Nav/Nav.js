@@ -9,31 +9,27 @@ import { useState } from 'react'
   export default function Nav() {
 
     const [ showmenu, setShowmenu] = useState(false);
-  const [toggle, setToggle] = useState(true);
+    // const [toggle, setToggle] = useState(true);
 
 
     let MenuHandler=()=>{
     setShowmenu(!showmenu )
     }
-     
 
-  const pathe = () => { 
-      setToggle(false) 
-      setShowmenu(!showmenu)
-      showmenu(true)
-  }
+
+   
 
   
 
   
   return (
     <nav>
-     {toggle ? <ul className={`${showmenu ? 'navlinks navlinks-show' : 'navlinks'}`}>
+     <ul className={`${showmenu ? 'navlinks navlinks-show' : 'navlinks'}`}>
          {
           navContent.map(({id, name, path, icon})=> {
             return(
               <li className='nav-item' key={id} >
-                <NavLink to={path} onClick={()=>(pathe)} className={({isActive})=> isActive ? 'nav-link navlinksActive' : 'nav-link'}>
+                <NavLink  to={path}  className={({isActive})=> isActive ? 'nav-link navlinksActive' : 'nav-link'}>
                   <span><FontAwesomeIcon icon={icon}/> </span>
                   <h3>{name}</h3>
                 </NavLink>
@@ -41,7 +37,7 @@ import { useState } from 'react'
             )
           })
         } 
-      </ul> : "" }
+      </ul> 
 
        <div className={`${showmenu ? 'nav-toggle nav-close' : "nav-toggle" }`} onClick={MenuHandler}>
         <span></span>

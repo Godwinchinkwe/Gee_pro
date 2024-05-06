@@ -62,7 +62,9 @@
 
 .navlinksActive h3{
     color:var(--color-primary);
+    /* transform: scale(.8); */
 }
+
 
 @media (min-width: 1024px) {
     nav{
