@@ -16,6 +16,9 @@ const Contact = () => {
   const [number, setNumber] = useState('');
   const [message, setMessage] = useState('');
 
+  const [ done, setDone] = useState(false)
+  const [ notSent, setNotSent] = useState(false)
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -28,11 +31,12 @@ const Contact = () => {
       .then(
         () => {
           console.log('SUCCESS!');
-          // setDone(true);
+          setDone(true);
         },
        
         (error) => {
           console.log('FAILED...', error.text);
+          setNotSent(true);
         },
       );
 
@@ -49,7 +53,9 @@ const Contact = () => {
 
     <>
     <section>
-      <HeadingText title={'Contact'} titlePrimary={'Me'} />
+      <HeadingText title={'Contact'} titlePrimary={'Me'}  />
+      <HeadingText titlePrimary={done && "Thank you very much for Contacting Us"} />
+      <HeadingText titlePrimary={notSent && "Message Not Sent! check your network connection"} />
 
       <div className='container contact-container'>
         <form id="myForm" ref={form} onSubmit={sendEmail} >
@@ -75,6 +81,7 @@ const Contact = () => {
             send 
             <span><FontAwesomeIcon icon={faPaperPlane} /></span>
           </button>
+          
         </form>
       </div>
     </section>
