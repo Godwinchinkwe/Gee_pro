@@ -4,10 +4,9 @@
     display: flex;
     height: 70vh; 
     margin-top: 4rem;    
-    background: rgb(170, 20, 20); 
+    /* background: rgb(170, 20, 20);  */
     justify-content: space-around;
     align-items: center;
-    /* flex-direction: column; */
     /* width: 80%; */
 
   }
