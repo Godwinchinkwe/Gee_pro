@@ -4,6 +4,7 @@ import Cards from '../../UI/Cards'
 import HeadingText from '../../Components/HeadingText/HeadingText'
 import { portfolio} from '../../data/Data'
 import Testimonials from '../../Components/Testimonials/Testimonials'
+import Works from '../../Components/Works/Works'
 
 
 const Portfolio = () => {
@@ -28,6 +29,7 @@ const Portfolio = () => {
       </div>
     </section>
     <Testimonials />
+    <Works />
     </>
   )
 }
