@@ -20,10 +20,10 @@ const About = () => {
         <div className='about-left'>
           <h3> I'm Godwin Chinkwe</h3>
           <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          with a keen eye for design and a knack for crafting seamless user experiences. With 5 years of experience in the industry, I've had the privilege of working on a variety of projects, from small-scale startups to large-scale enterprise applications.
           </p>
           <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          My journey into the world of web development began with a love for creativity and problem-solving. I thrive on turning ideas into reality through clean, efficient code and intuitive interfaces. Whether it's building responsive websites, developing interactive web applications, or optimizing performance, I'm always up for a challenge. 
           </p>
           <a href={cv} download className='btn'>
             Download CV <span> <FontAwesomeIcon icon={faDownload}/> </span>

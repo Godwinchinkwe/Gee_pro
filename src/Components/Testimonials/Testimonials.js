@@ -9,7 +9,7 @@ import 'swiper/css';
 const Testimonials = () => {
   return (
     <section>
-        <HeadingText titlePrimary={'Testimonials'} />
+        <HeadingText title={'Clients'} titlePrimary={'Testimonials'} />
 
         <div className='container testimonials-container'>
             <Swiper 

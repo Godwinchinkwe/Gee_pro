@@ -67,7 +67,7 @@ export const experience = [
     {
         id: 3,
         no: '3+',
-        title:'Happy Clintes'
+        title:'Happy Clientes'
     },
 ];
 
@@ -155,19 +155,19 @@ export const testimonials = [
     {
         id: 1,
         img: avatar1,
-        name: 'Dong Lee',
+        name: 'Chris Eze',
         des: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione officiis iusto nulla exercitationem architecto sunt sint quis ipsam odio neque.',        
     },
     {
         id: 2,
         img: avatar2,
-        name: 'Mohammed Habib',
+        name: 'Miracle Chinkwe',
         des: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione officiis iusto nulla exercitationem architecto sunt sint quis ipsam odio neque.',        
     },
     {
         id: 3,
         img: avatar3,
-        name: 'Jhon Alas',
+        name: 'Jhon Emmanuel',
         des: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione officiis iusto nulla exercitationem architecto sunt sint quis ipsam odio neque.',        
     },
     {
