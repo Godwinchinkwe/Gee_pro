@@ -4,7 +4,7 @@ import HeadingText from '../../Components/HeadingText/HeadingText'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import emailjs from '@emailjs/browser';
-import Swal from 'sweetalert2'
+// import Swal from 'sweetalert2'
 
 
 
@@ -68,13 +68,7 @@ const Contact = () => {
           <textarea name='message' id='message' value={message} rows="6" placeholder='Your Message'
           onChange={(e) => setMessage(e.target.value)}></textarea>
           
-          <button type='submit' onClick={()=> Swal.fire({
-                    position: 'top-end',
-                    icon: 'success',
-                    title: 'Message sent Successfully ',
-                    showConfirmButton: true,
-                    timer: 1500,
-                  })} value="Send" className='btn'>
+          <button type='submit' value="Send" className='btn'>
             send 
             <span><FontAwesomeIcon icon={faPaperPlane} /></span>
           </button>

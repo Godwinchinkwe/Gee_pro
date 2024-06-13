@@ -3,7 +3,6 @@ import './Nav.css'
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react'
-// import React, { useState, useRef, } from 'react';
 
 
 
@@ -11,26 +10,11 @@ import { useState } from 'react'
 
     const [ showmenu, setShowmenu] = useState(false);
 
-    // const [isOpen, setIsOpen] = useState(false);
-    // const navRef = useRef(null);
+ 
 
     const toggleNav = () => {
       setShowmenu(!showmenu);
     };
-
-    // const handleClickOutside = (event) => {
-    //   if (navRef.current && !navRef.current.contains(event.target)) {
-    //     setShowmenu(false);
-    //   }
-    // };
-
-    // useEffect(() => {
-    //   document.addEventListener('mousedown', handleClickOutside);
-    //   return () => {
-    //     document.removeEventListener('mousedown', handleClickOutside);
-    //   };
-    // }, []);
-
 
     let MenuHandler=()=>{
     setShowmenu(!showmenu )
