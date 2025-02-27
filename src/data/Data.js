@@ -56,17 +56,17 @@ export const navContent = [
 export const experience = [
     {
         id: 1,
-        no: '2+',
+        no: '3+',
         title:'Years Experience'
     },
     {
         id: 2,
-        no: '10+',
+        no: '15+',
         title:'Complete Projects'
     },
     {
         id: 3,
-        no: '3+',
+        no: '21+',
         title:'Happy Clientes'
     },
 ];
@@ -105,7 +105,7 @@ export const services = [
         id: 1,
         icon: faCode,
         name:'Web Development',
-        des:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione officiis iusto nulla exercitationem architecto sunt sint quis ipsam odio neque.'
+        des:'A technical professional who designs, build and maintains websites and web applications, using coding languages like HTML, CSS, and JavaScript to create the visual structure and functionalities of a site.'
     },
     {
         id: 2,
@@ -116,8 +116,26 @@ export const services = [
     {
         id: 3,
         icon: faCodeCompare,
-        name:'Python Customize',
-        des:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione officiis iusto nulla exercitationem architecto sunt sint quis ipsam odio neque.'
+        name:'Wordpress Developer',
+        des:'.'
+    },
+    {
+        id: 3,
+        icon: faCodeCompare,
+        name:'Video Editing',
+        des:'.'
+    },
+    {
+        id: 3,
+        icon: faCodeCompare,
+        name:'Content Creator',
+        des:'.'
+    },
+    {
+        id: 3,
+        icon: faCodeCompare,
+        name:'Graphics Designer',
+        des:'.'
     },
 ];
 
